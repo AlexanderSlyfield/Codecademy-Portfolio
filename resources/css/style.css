@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+main,
+footer {
+    padding: 0 10rem;
+}
+
+body>hr:first-of-type {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* NAV BAR STYLINGS: */
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0.5rem;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 6rem;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    padding-left: 5rem;
+    font-size: 2.5rem;
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+/* ABOUT SECTION STYLINGS: */
+#about {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#about figure {
+    width: 20%;
+    margin-right: 15rem;
+}
+
+#about article {
+    width: 40%;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#about article p {
+    margin-top: 0.8rem;
+}
+
+#about h2 {
+    padding-bottom: 1rem;
+}
+
+#about figcaption {
+    color: grey;
+}
+
+/* PROJECT SECTION STYLING: */
+#projects {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 0 3rem;
+}
+
+#projects h2 {
+    margin-bottom: 1.8rem;
+}
+
+#projects details {
+    margin-left: 17rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#projects details:hover {
+    background-color: bisque;
+}
+
+#projects details[open]:hover {
+    background-color: initial;
+}
+
+#projects summary {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#projects figure {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#projects figcaption {
+    color: grey;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+#projects hr {
+    margin-left: 17rem;
+}
+
+#projects p {
+    padding-right: 10rem;
+    padding-bottom: 1rem;
+}
+
+#projects img {
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+
+/* SKILLS SECTION STYLING: */
+#skills {
+    padding: 5rem 3rem;
+}
+
+#skills h2 {
+    font-size: 2.7rem;
+    padding-bottom: 4rem;
+}
+
+#skills ul {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#skills ul li {
+    list-style-type: none;
+    width: 10rem;
+}
+
+#skills i {
+    font-size: 5rem;
+}
+
+/* FOOTER SECTION STYLING: */
+footer {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 0.5rem 4rem;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 2.5rem;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    padding-left: 5rem;
+    font-size: 2rem;
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer>ul {
+    padding: 3rem 0 0;
+    justify-content: center;
+}
+
+footer>ul li {
+    padding: 0 2rem;
+}
+
+footer hr {
+    width: 90%;
+    margin: auto;
+}
+
+footer i {
+    font-size: 2.5rem;
+}
+
+footer p {
+    margin: 0 auto;
+    padding: 4.5rem 0 4rem;
+    font-size: 1.4rem;
+}

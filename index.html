@@ -7,24 +7,27 @@
     <title>Codecademy Porfolio</title>
 
     <script src="https://kit.fontawesome.com/d7ba8f744c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Projects</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
         <h1>Alexander Slyfield</h1>
         <nav>
             <ul>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <hr>
+    <br>
     <main>
         <section id="about">
             <figure>
@@ -32,19 +35,26 @@
                     alt="Cartoon image of Alexander Slyfield">
                 <figcaption>Alexander Slyfield</figcaption>
             </figure>
-            <h2>About Me</h2>
-            <p>Hi, I’m Alex, an aspiring software developer with a passion for creating clean, functional, and
-                user-friendly web experiences. I have been building my skills through personal projects, online courses,
-                and constant curiosity.</p>
-            <p>I enjoy working across the full stack, especially when I get to bring a design to life with HTML, CSS,
-                and JavaScript. I’m currently exploring tools like GitHub, frameworks, and deployment platforms as I
-                grow my skill set and work on real-world projects.</p>
-            <p>Outside of coding, I enjoy playing chess, learning new things, and setting goals that push me outside my
-                comfort zone. I’m always looking for opportunities to collaborate, learn from others, and contribute to
-                meaningful work.</p>
+            <article>
+                <h2>About Me</h2>
+                <p>Hi, I’m Alex, an aspiring software developer with a passion for creating clean, functional, and
+                    user-friendly web experiences. I have been building my skills through personal projects, online
+                    courses,
+                    and constant curiosity.</p>
+                <p>I enjoy working across the full stack, especially when I get to bring a design to life with HTML,
+                    CSS,
+                    and JavaScript. I’m currently exploring tools like GitHub, frameworks, and deployment platforms as I
+                    grow my skill set and work on real-world projects.</p>
+                <p>Outside of coding, I enjoy playing chess, learning new things, and setting goals that push me outside
+                    my
+                    comfort zone. I’m always looking for opportunities to collaborate, learn from others, and contribute
+                    to
+                    meaningful work.</p>
+            </article>
         </section>
         <section id="projects">
             <h2>Projects</h2>
+            <hr>
             <details>
                 <summary>Clone site</summary>
                 <figure>
@@ -53,9 +63,11 @@
                     <figcaption>Snapshot of HelloFresh clone site</figcaption>
                 </figure>
                 <p>This was my first attempt at cloning a website. As you can see there is more to work on
-                    but it taught me a lot about stylings and how to use the developer tools to get the information you
+                    but it taught me a lot about stylings and how to use the developer tools to get the information
+                    you
                     need.</p>
             </details>
+            <hr>
             <details>
                 <summary>Calculator</summary>
                 <figure>
@@ -69,6 +81,7 @@
                     effectively. I also developed my understanding of responsive design by implementing CSS techniques
                     that ensured the application looked great like the calculator's 3D buttons!</p>
             </details>
+            <hr>
             <details>
                 <summary>Fundraising Thermometer</summary>
                 <figure>
@@ -82,6 +95,7 @@
                 <p>This project helped me strengthen my skills in creating engaging visual components and manipulating
                     the DOM for real-time data updates.</p>
             </details>
+            <hr>
             <details>
                 <summary>FilmFlix Film Database Application</summary>
                 <figure>
@@ -96,6 +110,7 @@
                 <p>I learned how to integrate database queries with Python and gained experience working with exception
                     handling to manage potential errors.</p>
             </details>
+            <hr>
         </section>
         <section id="skills">
             <h2>Skills</h2>
@@ -119,22 +134,23 @@
     <footer>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Projects</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
-        </nav>
-        <h1>Alexander Slyfield</h1>
-        <nav>
+            <h3>Alexander Slyfield</h3>
             <ul>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
         <hr>
         <ul>
-            <li><a href=""><i class="fa-brands fa-linkedin" role="img" aria-label="LinkedIn Icon"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-github" role="img" aria-label="GitHub Icon"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-envelope" role="img" aria-label="Email Icon"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/alexander-slyfield-7a4b23257/" target="_blank"><i
+                        class="fa-brands fa-linkedin" role="img" aria-label="LinkedIn Icon"></i></a></li>
+            <li><a href="https://github.com/AlexanderSlyfield" target="_blank"><i class="fa-brands fa-github" role="img"
+                        aria-label="GitHub Icon"></i></a></li>
+            <li><a href="./contact.html"><i class="fa-solid fa-envelope" role="img" aria-label="Email Icon"></i></a>
+            </li>
         </ul>
         <p>&copy; 2025 Alexander Slyfield. All rights reserved.</p>
     </footer>
