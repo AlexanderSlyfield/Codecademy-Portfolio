@@ -7,52 +7,77 @@
     <title>Codecademy Porfolio</title>
 
     <script src="https://kit.fontawesome.com/d7ba8f744c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resources/css/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Projects</li>
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#projects">Projects</a></li>
             </ul>
         </nav>
         <h1>Alexander Slyfield</h1>
         <nav>
             <ul>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="./index.html#skills">Skills</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <hr>
     <main>
         <section id="contact">
             <h2>
                 Contact Me
             </h2>
             <p>Thanks for visiting my portfolio! If you’d like to reach out, I’d love to hear from you. Whether you have
-                a question, a collaboration idea, or just want to say hello — feel free to get in touch using the form
-                below. You can also reach me directly via email or connect with me on social media. I’m always open to
+                a question, a collaboration idea, or just want to say hello, feel free to get in touch using the form
+                below.</p>
+            <p>You can also reach me directly via email or connect with me on social media. I’m always open to
                 new opportunities and conversations, so don’t hesitate to drop a message!</p>
-            <form action="https://formspree.io/f/mnndeeqp" method="POST">
-                <label for="name">Full Name: </label>
-                <input type="text" name="name" id="name" required placeholder="Write your name here">
-                <br>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" required placeholder="Write your email address here">
-                <br>
-                <label for="message">Message: </label>
-                <textarea name="message" id="message" cols="30" rows="10" required
-                    placeholder="Write your message here"></textarea>
-                <hr>
-                <input type="submit" value="Send">
-            </form>
+            <article>
+                <form action="https://formspree.io/f/mnndeeqp" method="POST">
+                    <label for="name">Full Name: </label>
+                    <input type="text" name="name" id="name" required placeholder="Write your name here">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required placeholder="Write your email address here">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="45" rows="10" required
+                        placeholder="Write your message here"></textarea>
+                    <hr>
+                    <input type="submit" value="Send">
+                </form>
+            </article>
         </section>
-        <section id="socials">
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#projects">Projects</a></li>
+                </ul>
+                <h3>Alexander Slyfield</h3>
+                <ul>
+                    <li><a href="/index.html#skills">Skills</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <hr>
             <ul>
-                <li><i class="fa-brands fa-linkedin" role="img" aria-label="LinkedIn Icon"></i></li>
-                <li><i class="fa-brands fa-github" role="img" aria-label="GitHub Icon"></i></li>
-                <li><i class="fa-solid fa-envelope" role="img" aria-label="Email Icon"></i></li>
+                <li><a href="https://www.linkedin.com/in/alexander-slyfield-7a4b23257/" target="_blank"><i
+                            class="fa-brands fa-linkedin" role="img" aria-label="LinkedIn Icon"></i></a></li>
+                <li><a href="https://github.com/AlexanderSlyfield" target="_blank"><i class="fa-brands fa-github"
+                            role="img" aria-label="GitHub Icon"></i></a></li>
+                <li><a href="./contact.html"><i class="fa-solid fa-envelope" role="img" aria-label="Email Icon"></i></a>
+                </li>
             </ul>
-        </section>
+            <p>&copy; 2025 Alexander Slyfield. All rights reserved.</p>
+        </footer>
     </main>

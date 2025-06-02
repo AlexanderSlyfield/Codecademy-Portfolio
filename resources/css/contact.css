@@ -12,21 +12,12 @@ body {
     font-size: 1.6rem;
 }
 
-img {
-    max-width: 100%;
-}
-
-main,
-footer {
-    padding: 0 10rem;
-}
-
 body>hr:first-of-type {
     width: 95%;
     margin: 0 auto;
 }
 
-/* NAV BAR STYLINGS: */
+/* NAV BAR STYLING: */
 header {
     display: flex;
     justify-content: space-around;
@@ -53,136 +44,85 @@ header li {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-header a:hover {
-    color: #0048ff;
-}
-
 header a {
     color: black;
     text-decoration: none;
 }
 
-/* ABOUT SECTION STYLINGS: */
-#about {
-    display: flex;
-    padding: 2rem 0;
-    justify-content: center;
-    align-items: center;
+header a:hover {
+    color: #0048ff;
 }
 
-#about figure {
-    width: 20%;
-    margin-right: 15rem;
-}
-
-#about img {
-    border-radius: 0.5rem;
-}
-
-#about article {
-    width: 40%;
+/* CONTACT SECTION STYLING */
+#contact {
+    padding: 0 13rem;
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
 }
 
-#about article p {
-    margin-top: 0.8rem;
-    font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#about h2 {
-    padding-bottom: 1rem;
+#contact h2 {
+    font-size: 2.7rem;
+    padding: 4rem 0;
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#about figcaption {
-    color: grey;
-}
-
-/* PROJECT SECTION STYLING: */
-#projects {
-    font-size: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0 3rem;
-}
-
-#projects h2 {
-    margin-bottom: 1.8rem;
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#projects details {
+#contact p {
     margin-left: 17rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-right: 10rem;
     font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#projects details:hover {
+#contact p:first-of-type {
+    padding-bottom: 2rem;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    padding: 4rem 9.2rem 4rem 0;
+    display: grid;
+    grid-template: auto auto auto auto / auto 1fr;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem 1rem;
+    font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+label {
+    justify-self: center;
+}
+
+form hr {
+    grid-column: 2;
+    margin: 0.9rem 3rem;
+}
+
+input:nth-of-type(3) {
+    grid-column: 2;
+    box-shadow: none;
+    padding: 1rem 4rem;
+    justify-self: center;
+}
+
+input:nth-of-type(3):hover {
     background-color: #fcf0ff;
 }
 
-#projects details[open]:hover {
-    background-color: initial;
+label:nth-of-type(3) {
+    align-self: start;
 }
 
-#projects summary {
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-#projects figure {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem 0;
-}
-
-#projects figcaption {
-    color: grey;
-    margin: 0 auto;
-    font-size: 1.6rem;
-}
-
-#projects hr {
-    margin-left: 17rem;
-}
-
-#projects p {
-    padding-right: 10rem;
-    padding-bottom: 1rem;
-}
-
-#projects img {
-    border: 0.1rem solid black;
+input,
+textarea {
+    font-size: 1.8rem;
+    font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-radius: 0.5rem;
-}
+    border: 0.1rem solid grey;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem;
 
-/* SKILLS SECTION STYLING: */
-#skills {
-    padding: 5rem 3rem;
-}
-
-#skills h2 {
-    font-size: 2.7rem;
-    padding-bottom: 4rem;
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#skills ul {
-    display: flex;
-    margin-bottom: 2rem;
-}
-
-#skills ul li {
-    list-style-type: none;
-    width: 10rem;
-}
-
-#skills i {
-    font-size: 5rem;
 }
 
 /* FOOTER SECTION STYLING: */
@@ -245,13 +185,9 @@ footer i {
     font-size: 2.5rem;
 }
 
-footer i:hover {
-    color: #0048ff;
-}
-
 footer p {
     margin: 0 auto;
     padding: 4.5rem 0 4rem;
     font-size: 1.4rem;
-    font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
