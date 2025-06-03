@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <script defer src="/resources/javascript/script.js"></script>
 </head>
 
 <body>
@@ -53,7 +55,10 @@
                     <textarea name="message" id="message" cols="45" rows="10" required
                         placeholder="Write your message here"></textarea>
                     <hr>
-                    <input type="submit" value="Send">
+                    <div role="group" aria-label="Form Actions">
+                        <input type="submit" value="Send">
+                        <button>Reset</button>
+                    </div>
                 </form>
             </article>
         </section>
