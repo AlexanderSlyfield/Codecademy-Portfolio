@@ -162,7 +162,9 @@ header a {
 
 /* SKILLS SECTION STYLING: */
 #skills {
-    padding: 5rem 3rem;
+    padding: 5rem 0;
+    margin: 0 3rem;
+    overflow: hidden;
 }
 
 #skills h2 {
@@ -171,14 +173,57 @@ header a {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+#skills div {
+    display: flex;
+}
+
 #skills ul {
     display: flex;
     margin-bottom: 2rem;
+    min-width: 118rem;
+}
+
+#skills ul:first-of-type {
+    transform: translateX(0rem);
+    animation-name: moving-carosel;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#skills ul:nth-of-type(2) {
+    transform: translateX(-236rem);
+    animation-name: moving-carosel2;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving-carosel2 {
+    from {
+        transform: translateX(-236rem);
+    }
+
+    to {
+        transform: translateX(-118rem);
+    }
+}
+
+@keyframes moving-carosel {
+    from {
+        transform: translateX(0rem);
+    }
+
+    to {
+        transform: translateX(118rem);
+    }
 }
 
 #skills ul li {
     list-style-type: none;
     width: 10rem;
+    display: flex;
+    justify-content: center;
 }
 
 #skills i {
