@@ -224,6 +224,11 @@ header a {
     width: 10rem;
     display: flex;
     justify-content: center;
+    transition: transform 0.3s;
+}
+
+#skills ul li:hover {
+    transform: scale(1.5);
 }
 
 #skills i {
