@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +25,7 @@ footer {
 body>hr:first-of-type {
     width: 95%;
     margin: 0 auto;
+    border-bottom: 0;
 }
 
 /* NAV BAR STYLINGS: */
@@ -33,6 +35,8 @@ header {
     padding: 4rem 0.5rem;
     align-items: center;
     background-color: #f5f5f5;
+    z-index: 2;
+    position: relative;
 }
 
 header h1 {
@@ -53,6 +57,10 @@ header li {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.fa-bars {
+    display: none;
+}
+
 header a:hover {
     color: #0048ff;
 }
@@ -62,10 +70,78 @@ header a {
     text-decoration: none;
 }
 
+/* BURGER MENU STYLINGS: */
+body>nav {
+    position: absolute;
+    top: -8.8rem;
+    transition: top 0.7s ease;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: rgb(86, 86, 86);
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+}
+
+body>nav ul li {
+    padding: 1rem;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+body>nav ul li:active {
+    background-color: black;
+    color: #0048ff;
+}
+
+body>nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+/* RESPOSIVE DESIGN: */
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header li {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 2rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: inline;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .fa-bars:active {
+        background-color: darkgray;
+        transform: scale(0.90);
+    }
+}
+
 /* ABOUT SECTION STYLINGS: */
 #about {
     display: flex;
-    padding: 2rem 0;
+    padding: 4rem 0;
     justify-content: center;
     align-items: center;
 }
@@ -165,6 +241,7 @@ header a {
     padding: 5rem 0;
     margin: 0 3rem;
     overflow: hidden;
+    max-width: 118rem;
 }
 
 #skills h2 {

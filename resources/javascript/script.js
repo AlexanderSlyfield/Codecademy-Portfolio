@@ -37,3 +37,31 @@ if (div) {
     div.onmouseleave = playCarosel;
 }
 
+
+const burgerMenu = document.querySelector("body>nav");
+const burgerMenuIcon = document.querySelector(".fa-bars");
+const main = document.querySelector("main");
+const body = document.querySelector("body");
+
+const toggleBurgerMenu = () => {
+    if (getComputedStyle(burgerMenu).top === "-88px") {
+        burgerMenu.style.top = "6.9rem";
+        main.style.transition = "opacity 0.7s ease";
+        main.style.opacity = 0.5;
+        body.style.overflow = "hidden";
+    } else {
+        burgerMenu.style.top = "-8.8rem";
+        main.style.opacity = 1;
+    }
+}
+
+const removeBurgerMenu = () => {
+    if (getComputedStyle(burgerMenu).top === "69px") {
+        burgerMenu.style.top = "-8.8rem";
+        main.style.opacity = 1;
+        body.style.overflow = "visible";
+    }
+}
+
+body.onclick = removeBurgerMenu;
+burgerMenuIcon.onclick = toggleBurgerMenu;
