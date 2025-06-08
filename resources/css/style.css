@@ -182,7 +182,7 @@ body>nav ul a {
     }
 
     #about {
-        padding: 0 0 3rem 0;
+        padding: 1rem 0 3rem 0;
     }
 
     #about figure {
@@ -198,7 +198,7 @@ body>nav ul a {
     }
 
     #about article p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     #about figcaption {
@@ -288,7 +288,7 @@ body>nav ul a {
 
 #projects figcaption {
     color: grey;
-    margin: 0 auto;
+    text-align: center;
     font-size: 1.6rem;
 }
 
@@ -304,6 +304,57 @@ body>nav ul a {
 #projects img {
     border: 0.1rem solid black;
     border-radius: 0.5rem;
+}
+
+/* RESPONSIVE DESIGN: */
+@media only screen and (max-width: 1279px) {
+
+    #projects {
+        font-size: 1.6rem;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    #projects hr {
+        margin-left: 10rem;
+    }
+
+    #projects details {
+        margin-left: 10rem;
+    }
+
+    #projects summary {
+        font-size: 1.8rem;
+    }
+
+    #projects figcaption {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #projects h2 {
+        text-align: center;
+    }
+
+    #projects details {
+        margin: 0;
+    }
+
+    #projects hr {
+        margin: 0;
+    }
+
+    #projects figure {
+        width: 100%;
+    }
+
+    #projects p {
+        padding-right: 0;
+        text-align: center;
+    }
 }
 
 /* SKILLS SECTION STYLING: */
