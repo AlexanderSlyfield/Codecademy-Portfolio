@@ -575,7 +575,7 @@ footer nav:nth-of-type(2) {
     }
 
     footer i:hover {
-        color: inherit;
+        color: black;
     }
 
     footer i:active {
